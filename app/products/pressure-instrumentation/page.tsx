@@ -1,6 +1,6 @@
 export default function PressureInstrumentationPage() {
   return (
-    <main className="min-h-screen bg-stone-50 text-slate-950">
+<main className="min-h-screen bg-transparent text-slate-950">
       <div className="mx-auto max-w-5xl px-6 py-20">
         <a href="/" className="text-orange-700 font-semibold">← Back to Home</a>
 
