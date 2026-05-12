@@ -2,8 +2,7 @@ import React from "react";
 
 export default function TemperaturePage() {
   return React.createElement(
-    "main",
-    { className: "min-h-screen bg-stone-50 text-slate-950" },
+<main className="min-h-screen bg-transparent text-slate-950">
     React.createElement(
       "div",
       { className: "mx-auto max-w-5xl px-6 py-20" },
