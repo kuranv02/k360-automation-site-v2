@@ -58,8 +58,13 @@ const applications = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-stone-50 text-slate-950">
-      <header className="border-b border-slate-200 bg-white">
+    <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(135deg,#e3e5e8_0%,#c5c9cc_35%,#f4f5f6_55%,#bfc3c7_100%)] text-slate-950">
+      <div
+        className="pointer-events-none fixed inset-0 z-0 bg-[url('/k360-logo.png')] bg-center bg-no-repeat opacity-[0.06]"
+        style={{ backgroundSize: "70%" }}
+      />
+
+      <header className="relative z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-4">
             <img
@@ -78,14 +83,14 @@ export default function Home() {
 
           <a
             href="mailto:sales@k360automation.com"
-            className="hidden rounded-md bg-orange-600 px-5 py-3 font-semibold text-white hover:bg-orange-700 md:inline-block"
+            className="hidden rounded-sm bg-orange-600 px-5 py-3 font-semibold text-white hover:bg-orange-700 md:inline-block"
           >
             Contact Sales
           </a>
         </div>
       </header>
 
-      <section className="border-b border-slate-200 bg-white">
+      <section className="relative z-10 border-b border-slate-200 bg-white/85 backdrop-blur">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-2">
           <div>
             <div className="mb-5 inline-flex rounded-sm border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-medium text-orange-800">
@@ -118,7 +123,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-sm border border-orange-100 bg-white p-8 shadow-xl">
+          <div className="rounded-sm border border-orange-100 bg-white/95 p-8 shadow-xl">
             <div className="text-sm font-medium text-slate-500">
               Typical support areas
             </div>
@@ -144,7 +149,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="solutions" className="mx-auto max-w-7xl px-6 py-20">
+      <section id="solutions" className="relative z-10 mx-auto max-w-7xl px-6 py-20">
         <div className="mb-10 max-w-3xl">
           <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-orange-700">
             Product Lines
@@ -159,7 +164,7 @@ export default function Home() {
           {productPages.map(({ slug, title, description, subject }) => (
             <div
               key={slug}
-              className="rounded-sm border border-slate-200 bg-white p-7 shadow-sm"
+              className="rounded-sm border border-slate-200 bg-white/95 p-7 shadow-sm backdrop-blur"
             >
               <h3 className="text-lg font-bold">{title}</h3>
 
@@ -177,7 +182,7 @@ export default function Home() {
                   href={`mailto:sales@k360automation.com?subject=${encodeURIComponent(
                     subject
                   )}`}
-                  className="rounded-sm border border-orange-600 px-5 py-3 text-center font-semibold text-orange-700 hover:bg-orange-50"
+                  className="rounded-sm border border-orange-600 bg-white px-5 py-3 text-center font-semibold text-orange-700 hover:bg-orange-50"
                 >
                   Discuss with an Expert
                 </a>
@@ -187,7 +192,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-slate-200 bg-white">
+      <section className="relative z-10 border-y border-slate-200 bg-white/85 backdrop-blur">
         <div className="mx-auto max-w-7xl px-6 py-20">
           <div className="mb-10">
             <h2 className="text-4xl font-bold">Applications We Support</h2>
@@ -197,7 +202,7 @@ export default function Home() {
             {applications.map((item) => (
               <div
                 key={item}
-                className="rounded-sm border border-slate-200 bg-stone-50 p-5 font-semibold"
+                className="rounded-sm border border-slate-200 bg-stone-50/95 p-5 font-semibold"
               >
                 {item}
               </div>
@@ -206,8 +211,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20">
-        <div className="rounded-sm border border-orange-200 bg-orange-50 p-8 md:p-12">
+      <section className="relative z-10 mx-auto max-w-7xl px-6 py-20">
+        <div className="rounded-sm border border-orange-200 bg-orange-50/95 p-8 shadow-lg md:p-12">
           <h2 className="text-4xl font-bold">
             Need help selecting or replacing instrumentation?
           </h2>
@@ -235,7 +240,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white px-6 py-8 text-center text-sm text-slate-500">
+      <footer className="relative z-10 border-t border-slate-200 bg-white/90 px-6 py-8 text-center text-sm text-slate-500 backdrop-blur">
         © 2026 K360 Automation
       </footer>
     </main>
