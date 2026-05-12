@@ -58,12 +58,8 @@ const applications = [
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(135deg,#e3e5e8_0%,#c5c9cc_35%,#f4f5f6_55%,#bfc3c7_100%)] text-slate-950">
-      <div
-        className="pointer-events-none fixed inset-0 z-0 bg-[url('/k360-logo.png')] bg-center bg-no-repeat opacity-[0.06]"
-        style={{ backgroundSize: "70%" }}
-      />
-
+    <main className="min-h-screen">
+   
       <header className="relative z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-4">
