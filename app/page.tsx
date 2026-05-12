@@ -93,7 +93,7 @@ export default function Home() {
             </div>
 
             <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
-              Automation, measurement and control support built for the industrial space.
+              Automation, measurement and control built for the industrial space.
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
@@ -151,7 +151,7 @@ export default function Home() {
           </div>
 
           <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
-            Instrumentation and control solutions built around the application.
+            Instrumentation and control solutions targeted at your application.
           </h2>
         </div>
 
