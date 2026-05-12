@@ -7,8 +7,7 @@ const productLines = [
   ['Process Control', 'Automation hardware, measurement packages, panels, analyzers, and PLC/DCS field integration support.'],
 ];
 
-const manufacturers = ['Tektrol', 'Reotemp', 'Proflo Valves', 'Campbell Automation & Measurement'];
-const applications = ['Separator instrumentation', 'SWD and produced water', 'Compressor stations', 'Gas processing plants', 'LACT and measurement skids', 'Pipeline pressure and flow', 'Tank level monitoring', 'Wellhead and subsurface', 'Automation and skid control', 'Three-phase separation'];
+const applications = ['Separator instrumentation', 'SWD and produced water', 'Compressor stations', 'Gas processing plants', 'LACT and measurement skids', 'Pipeline pressure and flow', 'Tank level monitoring', 'Fuel gas systems', 'Wellhead monitoring'];
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
               <div className="text-xs uppercase tracking-widest text-slate-500">Oklahoma Instrumentation • Automation • Control</div>
             </div>
           </div>
-          <a href="mailto:sales@k360automation.com" className="hidden rounded-2xl bg-orange-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-orange-700 active:bg-orange-800 md:inline-block cursor-pointer">Request Support</a>
+          <a href="mailto:sales@k360automation.com" className="hidden rounded-2xl bg-orange-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-orange-700 active:bg-orange-800 md:inline-block">Get in Touch</a>
         </div>
       </header>
 
@@ -52,19 +51,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="manufacturers" className="mx-auto max-w-7xl px-6 py-14">
-        <div className="mb-6 text-sm font-semibold uppercase tracking-widest text-orange-700">Initial Manufacturer Line Card</div>
-        <div className="grid gap-4 md:grid-cols-4">{manufacturers.map((name) => <div key={name} className="rounded-3xl border border-slate-200 bg-white p-6 text-center text-lg font-bold shadow-sm hover:shadow-md transition-shadow cursor-pointer">{name}</div>)}</div>
-      </section>
-
       <section id="solutions" className="mx-auto max-w-7xl px-6 py-20">
         <div className="mb-10 max-w-3xl">
           <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-orange-700">Product Lines</div>
           <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Instrumentation and control solutions built around the application.</h2>
-          <p className="mt-5 text-lg leading-8 text-slate-600">Whether you are replacing a failed field device, building a new skid, or standardizing across facilities, K360 helps narrow the options and identify the right solution.</p>
+          <p className="mt-5 text-lg leading-8 text-slate-600">Whether you are replacing a failed field device, building a new skid, or standardizing across facilities, K360 helps narrow the options and find the right fit.</p>
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {productLines.map(([title, copy]) => <div key={title} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm hover:shadow-md transition-shadow cursor-pointer"><h3 className="text-xl font-bold">{title}</h3><p className="mt-3 text-slate-600">{copy}</p></div>)}
+          {productLines.map(([title, copy]) => <div key={title} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm hover:shadow-md transition-shadow cursor-pointer"><h3 className="text-lg font-bold">{title}</h3><p className="mt-3 text-sm leading-6 text-slate-600">{copy}</p></div>)}
         </div>
       </section>
 
@@ -82,15 +76,15 @@ export default function Home() {
       <section id="contact" className="mx-auto max-w-7xl px-6 py-20">
         <div className="rounded-3xl border border-orange-200 bg-orange-50 p-8 md:p-12">
           <h2 className="text-4xl font-bold">Need help selecting or replacing instrumentation?</h2>
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-700">Send process conditions, an existing model number, datasheet, photo, or application details. K360 will help identify a practical replacement or specify something new.</p>
+          <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-700">Send process conditions, an existing model number, datasheet, photo, or application details. K360 will help identify a practical solution.</p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a className="rounded-2xl bg-orange-600 px-7 py-4 text-center font-semibold text-white transition-colors hover:bg-orange-700 active:bg-orange-800 cursor-pointer" href="mailto:sales@k360automation.com">sales@k360automation.com</a>
-            <a className="rounded-2xl border border-orange-400 bg-white px-7 py-4 text-center font-semibold text-orange-600 transition-colors hover:bg-orange-50 active:bg-orange-100 cursor-pointer" href="tel:+1-918-555-0100">(918) 555-0100</a>
+            <a className="rounded-2xl bg-orange-600 px-7 py-4 text-center font-semibold text-white transition-colors hover:bg-orange-700 active:bg-orange-800 cursor-pointer" href="mailto:sales@k360automation.com">Email Sales</a>
+            <a className="rounded-2xl border border-orange-400 bg-white px-7 py-4 text-center font-semibold text-orange-600 transition-colors hover:bg-orange-50 active:bg-orange-100 cursor-pointer" href="tel:+1-918-555-0123">Call Sales</a>
           </div>
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white px-6 py-8 text-center text-sm text-slate-500">© 2026 K360 Automation. Oklahoma industrial instrumentation, automation, valve, and process control.</footer>
+      <footer className="border-t border-slate-200 bg-white px-6 py-8 text-center text-sm text-slate-500">© 2026 K360 Automation. Oklahoma industrial instrumentation, automation, valve, and process control support for upstream oil & gas.</footer>
     </main>
   );
 }
