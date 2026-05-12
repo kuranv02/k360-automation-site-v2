@@ -103,21 +103,21 @@ export default function Home() {
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a
                 href="mailto:sales@k360automation.com"
-                className="rounded-2xl bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
+                className="rounded-md bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
               >
                 Talk Through an Application
               </a>
 
               <a
                 href="#solutions"
-                className="rounded-2xl border border-slate-300 bg-white px-7 py-4 text-center font-semibold text-slate-900 hover:bg-slate-50"
+                className="rounded-md border border-slate-300 bg-white px-7 py-4 text-center font-semibold text-slate-900 hover:bg-slate-50"
               >
                 View Product Areas
               </a>
             </div>
           </div>
 
-          <div className="rounded-3xl border border-orange-100 bg-white p-8 shadow-xl">
+          <div className="rounded-md border border-orange-100 bg-white p-8 shadow-xl">
             <div className="text-sm font-medium text-slate-500">
               Typical support areas
             </div>
