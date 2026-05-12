@@ -1,9 +1,9 @@
 export default function ProcessControlPage() {
   return (
-<main className="min-h-screen bg-transparent text-slate-950">
+    <main className="min-h-screen bg-transparent text-slate-950">
       <div className="mx-auto max-w-5xl px-6 py-20">
         <a href="/" className="text-orange-700 font-semibold">
-          ← Back to Home
+          Back to Home
         </a>
 
         <h1 className="mt-6 text-5xl font-bold">Process Control</h1>
@@ -20,18 +20,18 @@ export default function ProcessControlPage() {
             "Process Analyzers",
             "Gas Detection",
             "Control Panels",
-            "Field Troubleshooting Support"
+            "Field Troubleshooting Support",
           ].map((item) => (
             <div
               key={item}
-              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+              className="rounded-sm border border-slate-200 bg-white/85 p-5 shadow-sm backdrop-blur"
             >
               {item}
             </div>
           ))}
         </div>
 
-        <div className="mt-12 rounded-3xl border border-orange-200 bg-orange-50 p-8">
+        <div className="mt-12 rounded-sm border border-orange-200 bg-orange-50/85 p-8 shadow-lg backdrop-blur">
           <h2 className="text-3xl font-bold">
             Need help with an automation application?
           </h2>
@@ -43,7 +43,7 @@ export default function ProcessControlPage() {
 
           <a
             href="mailto:sales@k360automation.com?subject=Process Control Application"
-            className="mt-6 inline-block rounded-2xl bg-orange-600 px-7 py-4 font-semibold text-white"
+            className="mt-6 inline-block rounded-sm bg-orange-600 px-7 py-4 font-semibold text-white hover:bg-orange-700"
           >
             Discuss with an Expert
           </a>
