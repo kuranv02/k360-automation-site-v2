@@ -76,12 +76,21 @@ export default function Home() {
             </div>
           </div>
 
-          <a
-            href="mailto:sales@k360automation.com"
-            className="hidden rounded-sm bg-orange-600 px-5 py-3 font-semibold text-white hover:bg-orange-700 md:inline-block"
-          >
-            Contact Sales
-          </a>
+          <div className="hidden items-center gap-5 md:flex">
+            <Link
+              href="/about"
+              className="font-semibold text-slate-700 hover:text-orange-700"
+            >
+              About
+            </Link>
+
+            <a
+              href="mailto:sales@k360automation.com"
+              className="rounded-sm bg-orange-600 px-5 py-3 font-semibold text-white hover:bg-orange-700"
+            >
+              Contact Sales
+            </a>
+          </div>
         </div>
       </header>
 
@@ -89,7 +98,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-2">
           <div>
             <div className="mb-5 inline-flex rounded-sm border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-medium text-orange-800">
-              Manufacturers' representative for industrial instrumentation and control products
+              Manufacturers&apos; representative for industrial instrumentation and control products
             </div>
 
             <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
