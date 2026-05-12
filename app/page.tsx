@@ -71,7 +71,7 @@ export default function Home() {
             <div>
               <div className="text-xl font-bold">K360 Automation</div>
               <div className="text-xs uppercase tracking-widest text-slate-500">
-                Instrumentation • Automation • Controls
+                Instrumentation • Automation • Measurement • Controls
               </div>
             </div>
           </div>
@@ -89,11 +89,11 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-2">
           <div>
             <div className="mb-5 inline-flex rounded-sm border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-medium text-orange-800">
-              Manufacturers' representative for industrial instrumentation and control 
+              Manufacturers' representative for industrial instrumentation and control products
             </div>
 
             <h1 className="max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
-              Automation support built for Oklahoma oil & gas.
+              Automation and Measurement support built for industry.
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
