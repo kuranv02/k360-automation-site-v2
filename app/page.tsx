@@ -61,12 +61,13 @@ export default function Home() {
     <main className="min-h-screen bg-stone-50 text-slate-950">
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <img
               src="/k360-logo.png"
               alt="K360 Automation"
-              className="h-14 w-auto"
+              className="h-20 w-auto"
             />
+
             <div>
               <div className="text-xl font-bold">K360 Automation</div>
               <div className="text-xs uppercase tracking-widest text-slate-500">
@@ -77,7 +78,7 @@ export default function Home() {
 
           <a
             href="mailto:sales@k360automation.com"
-            className="hidden rounded-2xl bg-orange-600 px-5 py-3 font-semibold text-white hover:bg-orange-700 md:inline-block"
+            className="hidden rounded-md bg-orange-600 px-5 py-3 font-semibold text-white hover:bg-orange-700 md:inline-block"
           >
             Contact Sales
           </a>
@@ -87,7 +88,7 @@ export default function Home() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-2">
           <div>
-            <div className="mb-5 inline-flex rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-medium text-orange-800">
+            <div className="mb-5 inline-flex rounded-sm border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-medium text-orange-800">
               Oklahoma manufacturers' representative for industrial instrumentation
             </div>
 
@@ -103,21 +104,21 @@ export default function Home() {
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a
                 href="mailto:sales@k360automation.com"
-                className="rounded-md bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
+                className="rounded-sm bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
               >
                 Talk Through an Application
               </a>
 
               <a
                 href="#solutions"
-                className="rounded-md border border-slate-300 bg-white px-7 py-4 text-center font-semibold text-slate-900 hover:bg-slate-50"
+                className="rounded-sm border border-slate-300 bg-white px-7 py-4 text-center font-semibold text-slate-900 hover:bg-slate-50"
               >
                 View Product Areas
               </a>
             </div>
           </div>
 
-          <div className="rounded-md border border-orange-100 bg-white p-8 shadow-xl">
+          <div className="rounded-sm border border-orange-100 bg-white p-8 shadow-xl">
             <div className="text-sm font-medium text-slate-500">
               Typical support areas
             </div>
@@ -158,7 +159,7 @@ export default function Home() {
           {productPages.map(({ slug, title, description, subject }) => (
             <div
               key={slug}
-              className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"
+              className="rounded-sm border border-slate-200 bg-white p-7 shadow-sm"
             >
               <h3 className="text-lg font-bold">{title}</h3>
 
@@ -167,7 +168,7 @@ export default function Home() {
               <div className="mt-6 flex flex-col gap-3">
                 <Link
                   href={`/products/${slug}`}
-                  className="rounded-xl bg-orange-600 px-5 py-3 text-center font-semibold text-white hover:bg-orange-700"
+                  className="rounded-sm bg-orange-600 px-5 py-3 text-center font-semibold text-white hover:bg-orange-700"
                 >
                   Learn More
                 </Link>
@@ -176,7 +177,7 @@ export default function Home() {
                   href={`mailto:sales@k360automation.com?subject=${encodeURIComponent(
                     subject
                   )}`}
-                  className="rounded-xl border border-orange-600 px-5 py-3 text-center font-semibold text-orange-700 hover:bg-orange-50"
+                  className="rounded-sm border border-orange-600 px-5 py-3 text-center font-semibold text-orange-700 hover:bg-orange-50"
                 >
                   Discuss with an Expert
                 </a>
@@ -189,16 +190,14 @@ export default function Home() {
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-20">
           <div className="mb-10">
-            <h2 className="text-4xl font-bold">
-              Applications We Support
-            </h2>
+            <h2 className="text-4xl font-bold">Applications We Support</h2>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {applications.map((item) => (
               <div
                 key={item}
-                className="rounded-3xl border border-slate-200 bg-stone-50 p-5 font-semibold"
+                className="rounded-sm border border-slate-200 bg-stone-50 p-5 font-semibold"
               >
                 {item}
               </div>
@@ -208,7 +207,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <div className="rounded-3xl border border-orange-200 bg-orange-50 p-8 md:p-12">
+        <div className="rounded-sm border border-orange-200 bg-orange-50 p-8 md:p-12">
           <h2 className="text-4xl font-bold">
             Need help selecting or replacing instrumentation?
           </h2>
@@ -221,14 +220,14 @@ export default function Home() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href="mailto:sales@k360automation.com"
-              className="rounded-2xl bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
+              className="rounded-sm bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
             >
               Email Sales
             </a>
 
             <a
               href="tel:+14050000000"
-              className="rounded-2xl border border-orange-400 bg-white px-7 py-4 text-center font-semibold text-orange-600 hover:bg-orange-50"
+              className="rounded-sm border border-orange-400 bg-white px-7 py-4 text-center font-semibold text-orange-600 hover:bg-orange-50"
             >
               405-000-0000
             </a>
