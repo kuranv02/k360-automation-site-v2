@@ -46,20 +46,19 @@ const productPages = [
 ];
 
 const applications = [
-  "Separator instrumentation",
-  "SWD and produced water",
-  "Compressor stations",
-  "Gas processing plants",
-  "LACT and measurement skids",
-  "Pipeline pressure and flow",
-  "Tank level monitoring",
-  "Fuel gas systems",
+  { title: "Separator instrumentation", slug: "separator-instrumentation" },
+  { title: "SWD and produced water", slug: "swd-produced-water" },
+  { title: "Compressor stations", slug: "compressor-stations" },
+  { title: "Gas processing plants", slug: "gas-processing-plants" },
+  { title: "LACT and measurement skids", slug: "lact-measurement-skids" },
+  { title: "Pipeline pressure and flow", slug: "pipeline-pressure-flow" },
+  { title: "Tank level monitoring", slug: "tank-level-monitoring" },
+  { title: "Fuel gas systems", slug: "fuel-gas-systems" },
 ];
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-   
       <header className="relative z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-4">
@@ -196,12 +195,13 @@ export default function Home() {
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {applications.map((item) => (
-              <div
-                key={item}
-                className="rounded-sm border border-slate-200 bg-stone-50/95 p-5 font-semibold"
+              <Link
+                key={item.slug}
+                href={`/applications/${item.slug}`}
+                className="rounded-sm border border-slate-200 bg-stone-50/95 p-5 font-semibold transition hover:border-orange-300 hover:bg-orange-50"
               >
-                {item}
-              </div>
+                {item.title}
+              </Link>
             ))}
           </div>
         </div>
