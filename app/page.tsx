@@ -107,6 +107,13 @@ export default function Home() {
               About
             </Link>
 
+            <Link
+              href="/request-quote"
+              className="font-semibold text-slate-700 hover:text-orange-700"
+            >
+              Request Quote
+            </Link>
+
             <a
               href="mailto:sales@k360automation.com"
               className="rounded-sm bg-orange-600 px-5 py-3 font-semibold text-white hover:bg-orange-700"
@@ -134,12 +141,12 @@ export default function Home() {
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="mailto:sales@k360automation.com"
+              <Link
+                href="/request-quote"
                 className="rounded-sm bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
               >
-                Talk Through an Application
-              </a>
+                Request a Quote
+              </Link>
 
               <a
                 href="#solutions"
@@ -205,7 +212,9 @@ export default function Home() {
                 </Link>
 
                 <a
-                  href={`mailto:sales@k360automation.com?subject=${encodeURIComponent(subject)}`}
+                  href={`mailto:sales@k360automation.com?subject=${encodeURIComponent(
+                    subject
+                  )}`}
                   className="rounded-sm border border-orange-600 bg-white px-5 py-3 text-center font-semibold text-orange-700 hover:bg-orange-50"
                 >
                   Discuss with an Expert
@@ -246,18 +255,18 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="mailto:sales@k360automation.com"
+            <Link
+              href="/request-quote"
               className="rounded-sm bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
             >
-              Email Sales
-            </a>
+              Request a Quote
+            </Link>
 
             <a
-              href="tel:+14050000000"
+              href="mailto:sales@k360automation.com"
               className="rounded-sm border border-orange-400 bg-white px-7 py-4 text-center font-semibold text-orange-600 hover:bg-orange-50"
             >
-              405-000-0000
+              Email Sales
             </a>
           </div>
         </div>
