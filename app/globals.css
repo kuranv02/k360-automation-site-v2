@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 html {
   scroll-behavior: smooth;
@@ -9,4 +7,40 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  color: #0f172a;
+  background: linear-gradient(
+    135deg,
+    #e3e5e8 0%,
+    #c5c9cc 35%,
+    #f4f5f6 55%,
+    #bfc3c7 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 28s linear infinite;
 }
