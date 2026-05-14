@@ -199,9 +199,22 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="relative z-10 border-t border-slate-200 bg-white/90 px-6 py-8 text-center text-sm text-slate-500 backdrop-blur">
-        © 2026 K360 Automation
-      </footer>
-    </main>
-  );
-}
+     <footer className="relative z-10 border-t border-slate-200 bg-white/90 px-6 py-8 text-center text-sm text-slate-600 backdrop-blur">
+  <div className="mx-auto max-w-7xl space-y-2">
+    <div className="font-semibold">K360 Automation © 2026</div>
+    <div>Oklahoma City, Oklahoma</div>
+    <div>
+      <a href="tel:+14050000000" className="hover:text-orange-700">
+        405-000-0000
+      </a>
+    </div>
+    <div>
+      <a
+        href="mailto:sales@k360automation.com"
+        className="hover:text-orange-700"
+      >
+        sales@k360automation.com
+      </a>
+    </div>
+  </div>
+</footer>
