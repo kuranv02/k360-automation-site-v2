@@ -283,6 +283,12 @@ export default function Home() {
               Proven instrumentation, analytical, and automation manufacturers.
             </h2>
           </div>
+          
+          <p className="mt-3 text-xs text-slate-500">
+  Manufacturer names, trademarks, and logos are the property of their respective
+  owners and are used for identification purposes only. Product availability and
+  representation may vary by application and territory.
+</p>
 
           <div className="overflow-hidden">
             <div className="flex w-max animate-scroll gap-6">
