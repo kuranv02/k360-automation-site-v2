@@ -243,36 +243,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-10 mx-auto max-w-7xl px-6 py-20">
-        <div className="rounded-sm border border-orange-200 bg-orange-50/95 p-8 shadow-lg md:p-12">
-          <h2 className="text-4xl font-bold">
-            Need help selecting or replacing instrumentation?
-          </h2>
-
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-700">
-            Send process conditions, an existing model number, datasheet, photo,
-            or application details.
-          </p>
-
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href="/request-quote"
-              className="rounded-sm bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
-            >
-              Request a Quote
-            </Link>
-
-            <a
-              href="mailto:sales@k360automation.com"
-              className="rounded-sm border border-orange-400 bg-white px-7 py-4 text-center font-semibold text-orange-600 hover:bg-orange-50"
-            >
-              Email Sales
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative z-10 border-y border-slate-200 bg-white/85 px-6 py-16 backdrop-blur">
+            <section className="relative z-10 border-y border-slate-200 bg-white/85 px-6 py-16 backdrop-blur">
         <div className="mx-auto max-w-7xl">
           <div className="mb-8">
             <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-orange-700">
@@ -308,6 +279,35 @@ export default function Home() {
                 </a>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+      
+      <section className="relative z-10 mx-auto max-w-7xl px-6 py-20">
+        <div className="rounded-sm border border-orange-200 bg-orange-50/95 p-8 shadow-lg md:p-12">
+          <h2 className="text-4xl font-bold">
+            Need help selecting or replacing instrumentation?
+          </h2>
+
+          <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-700">
+            Send process conditions, an existing model number, datasheet, photo,
+            or application details.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <Link
+              href="/request-quote"
+              className="rounded-sm bg-orange-600 px-7 py-4 text-center font-semibold text-white hover:bg-orange-700"
+            >
+              Request a Quote
+            </Link>
+
+            <a
+              href="mailto:sales@k360automation.com"
+              className="rounded-sm border border-orange-400 bg-white px-7 py-4 text-center font-semibold text-orange-600 hover:bg-orange-50"
+            >
+              Email Sales
+            </a>
           </div>
         </div>
       </section>
